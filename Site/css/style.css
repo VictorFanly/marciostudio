@@ -1,0 +1,12 @@
+body {
+    background-color: black;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+IMG.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
