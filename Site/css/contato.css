@@ -1,0 +1,33 @@
+.contato {
+    margin-top: 50px;
+    display: flex;
+}
+
+.social-media {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.mapa {
+    border-radius: 10px;
+}
+
+.social-media-title {
+    text-align: center;
+}
+
+.social-media-icon {
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+}
+
+.social-media-image {
+    block-size: fit-content;
+}
+
+.maps {
+    text-align: center;
+}
