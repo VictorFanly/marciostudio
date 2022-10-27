@@ -31,3 +31,70 @@
 .maps {
     text-align: center;
 }
+
+.whatsapp {
+    z-index: 9999;
+    position:fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.social-media a {
+    margin: 20px;
+    display: inline-flex;
+    background: #f14130;
+    color: #fff;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+    font-size: 40px;
+    text-decoration:none;
+    border: 2px solid #fff;
+}
+
+.social-media a:hover{
+    background: #fff;
+    color: #f14130;
+    border: 2px solid #f14130;
+    transform: scale(1.3);
+}
+
+.social-media a i{
+    transition: .4s all;
+}
+
+
+
+
+.whatsapp a {
+    display: inline-flex;
+    background: #f14130;
+    color: #fff;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+    font-size: 40px;
+    text-decoration:none;
+    border: 2px solid #fff;
+}
+
+.whatsapp a:hover{
+    background: #fff;
+    color: #f14130;
+    border: 2px solid #f14130;
+    transform: scale(1.3);
+}
+
+.whatsapp a i{
+    transition: .4s all;
+}
+
+/* .whatsapp a:hover > i{
+    transform: scale(1.6);
+} */
