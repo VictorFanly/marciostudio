@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcio Silva Tattoo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Spectral:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css\style.css">
     <link rel="stylesheet" href="css\tatuadores.css">
     <link rel="stylesheet" href="css\estudio.css">
     <link rel="stylesheet" href="css\portfolio.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css\estetica.css">
     <link rel="stylesheet" href="css\contato.css">
     <link rel="stylesheet" href="fontawesome-free-6.2.0-web\css\all.min.css">
+    <script src="js\script.js"></script>
 </head>
 <body>
 
@@ -20,35 +25,36 @@
         <img class="logo" src="img\logo.png" alt="Logo">
     </section>
     <!--Sessão Tatuadores-->
-    <div>
+    <section>
+        <h2 class="tatuadores-titulo">Nossa Equipe</h2>
         <ul id="Tatuadores">
             <li>
                 <img class="foto" src="img\foto.jpg" alt="foto" width="170">
                 <p>Márcio</p>
-                <button>Portfólio</button>
+                <button class="portfolio-button">Portfólio</button>
             </li>
             <li>
                 <img class="foto" src="img\foto.jpg" alt="foto" width="170">
                 <p>Gabriel Correia</p>
-                <button>Portfólio</button>
+                <button class="portfolio-button">Portfólio</button>
             </li>
             <li>
                 <img class="foto" src="img\foto.jpg" alt="foto" width="170">
                 <p>Gabriel Marine</p>
-                <button>Portfólio</button>
+                <button class="portfolio-button">Portfólio</button>
             </li>
             <li>
                 <img class="foto" src="img\foto.jpg" alt="foto" width="170">
                 <p>Kim</p>
-                <button>Portfólio</button>
+                <button class="portfolio-button">Portfólio</button>
             </li>
             <li>
                 <img class="foto" src="img\foto.jpg" alt="foto" width="170">
                 <p>Queise</p>
-                <button>Portfólio</button>
+                <button class="portfolio-button">Portfólio</button>
             </li>
         </ul>
-    </div>
+    </section>
     <!--Sessão Estúdio-->
     <div class="estudioPai">
         <div class="estudio">
@@ -116,80 +122,83 @@
     </div>
     <!--Sessão Procedimentos Estéticos-->
     <section class="estetica">
-        <h2 class="seção-nome"> Procedimentos Estéticos </h2>
-        <button class="pre-btn"><img src="img\arrow.png" alt=""></button>
-        <button class="nxt-btn"><img src="img\arrow.png" alt=""></button>
-        <div class="estetica-container">
-            <div class="estetica-card">
-                <div class="estetica-imagem">
-                    <img src="img\q1.jpg" class="estetica-thumb">
+        <h2 class="estetica-seção-nome"> Procedimentos Estéticos </h2>
+        <div class="swiper estetica-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide estetica-card">
+                    <div class="estetica-imagem">
+                        <img src="img\q1.jpg" class="estetica-thumb">
+                    </div>
+                    <div class="estetica-info">
+                        <h2 class="estetica-titulo">Remoção de Tatuagem</h2>
+                        <p class="estetica-descricao">O laser é o tratamento mais seguro e eficiente na remoção. Seguro, pois atinge somente o pigmento da tatuagem, não prejudicando a pele ao redor. E eficiente porque ao ser usado sobre a tatuagem, os pigmentos desta absorvem seletivamente a luz do laser e fragmentam-se em micropartículas.</p>
+                    </div>
                 </div>
-                <div class="estetica-info">
-                    <h2 class="estetica-titulo">Remoção de Tatuagem</h2>
-                    <p class="estetica-descricao">Removemos seu arrependimento.</p>
-                </div>
-            </div>
 
-            <div class="estetica-card">
-                <div class="estetica-imagem">
-                    <img src="img\q2.jpg" class="estetica-thumb">
+                <div class="swiper-slide estetica-card">
+                    <div class="estetica-imagem">
+                        <img src="img\q2.jpg" class="estetica-thumb">
+                    </div>
+                    <div class="estetica-info">
+                        <h2 class="estetica-titulo">Limpeza de Pele</h2>
+                        <p class="estetica-descricao">Traz muitos benefícios para a pele principalmente para quem tem a pele oleosa, mista e acnéica. Essa técnica ajuda no controle da oleosidade, diminui a formação de cravos e espinhas, ameniza o aspecto de manchas e ainda proporciona a renovação de células mortas.</p>
+                    </div>
                 </div>
-                <div class="estetica-info">
-                    <h2 class="estetica-titulo">Limpeza de Pele</h2>
-                    <p class="estetica-descricao">Removemos seu arrependimento.</p>
-                </div>
-            </div>
 
-            <div class="estetica-card">
-                <div class="estetica-imagem">
-                    <img src="img\q3.jpg" class="estetica-thumb">
+                <div class="swiper-slide estetica-card">
+                    <div class="estetica-imagem">
+                        <img src="img\q3.jpg" class="estetica-thumb">
+                    </div>
+                    <div class="estetica-info">
+                        <h2 class="estetica-titulo">Peeling Hollywood</h2>
+                        <p class="estetica-descricao">Tratamento moderno realizado com laser não ablativo. Tendo como benefícios a regeneração celular, produção de colágeno, clareamento da pele, fechamento de poros dilatados e diminuição de pequenas linhas de expressão e cicatrizes de acne.</p>
+                    </div>
                 </div>
-                <div class="estetica-info">
-                    <h2 class="estetica-titulo">Peeling Hollywood</h2>
-                    <p class="estetica-descricao">Removemos seu arrependimento.</p>
-                </div>
-            </div>
 
-            <div class="estetica-card">
-                <div class="estetica-imagem">
-                    <img src="img\q4.jpg" class="estetica-thumb">
+                <div class="swiper-slide estetica-card">
+                    <div class="estetica-imagem">
+                        <img src="img\q4.jpg" class="estetica-thumb">
+                    </div>
+                    <div class="estetica-info">
+                        <h2 class="estetica-titulo">Despigmentação de Sobrancelhas</h2>
+                        <p class="estetica-descricao">O laser é o tratamento mais seguro e eficiente na despigmentação. Seguro, pois atinge somente o pigmento, não prejudicando a pele ao redor. E eficiente porque ao ser usado na sobrancelha, os pigmentos desta absorvem seletivamente a luz do laser e fragmentam-se em micropartículas..</p>
+                    </div>
                 </div>
-                <div class="estetica-info">
-                    <h2 class="estetica-titulo">Despigmentação de Sobrancelhas</h2>
-                    <p class="estetica-descricao">Removemos seu arrependimento.</p>
-                </div>
-            </div>
 
-            <div class="estetica-card">
-                <div class="estetica-imagem">
-                    <img src="img\q5.jpg" class="estetica-thumb">
+                <div class="swiper-slide estetica-card">
+                    <div class="estetica-imagem">
+                        <img src="img\q5.jpg" class="estetica-thumb">
+                    </div>
+                    <div class="estetica-info">
+                        <h2 class="estetica-titulo">Aplicação de Piercing</h2>
+                        <p class="estetica-descricao">Trabalhamos com jóias de alta qualidade, todas elas sendo material em titânio. Trabalhamos com agulha americana, material ideal para perfuração e todos nossos materiais são esterilizados em autoclave.</p>
+                    </div>
                 </div>
-                <div class="estetica-info">
-                    <h2 class="estetica-titulo">Aplicação de Piercing</h2>
-                    <p class="estetica-descricao">Removemos seu arrependimento.</p>
-                </div>
-            </div>
 
-            <div class="estetica-card">
-                <div class="estetica-imagem">
-                    <img src="img\q1.jpg" class="estetica-thumb">
+                <div class="swiper-slide estetica-card">
+                    <div class="estetica-imagem">
+                        <img src="img\q1.jpg" class="estetica-thumb">
+                    </div>
+                    <div class="estetica-info">
+                        <h2 class="estetica-titulo">Design de Sobrancelhas</h2>
+                        <p class="estetica-descricao">Removemos seu arrependimento.</p>
+                    </div>
                 </div>
-                <div class="estetica-info">
-                    <h2 class="estetica-titulo">Remoção de Tatuagem</h2>
-                    <p class="estetica-descricao">Removemos seu arrependimento.</p>
-                </div>
-            </div>
 
-            <div class="estetica-card">
-                <div class="estetica-imagem">
-                    <img src="img\q1.jpg" class="estetica-thumb">
-                </div>
-                <div class="estetica-info">
-                    <h2 class="estetica-titulo">Remoção de Tatuagem</h2>
-                    <p class="estetica-descricao">Removemos seu arrependimento.</p>
+                <div class="swiper-slide estetica-card">
+                    <div class="estetica-imagem">
+                        <img src="img\q1.jpg" class="estetica-thumb">
+                    </div>
+                    <div class="estetica-info">
+                        <h2 class="estetica-titulo">Tratamento de Melasma</h2>
+                        <p class="estetica-descricao">Removemos seu arrependimento.</p>
+                    </div>
                 </div>
             </div>
-    </div>
+        </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
     </section>
 
     <section class="contato">
@@ -225,7 +234,7 @@
         <a href="http://wa.me/5581999674401" target="_blank"><i class="fa-brands fa-whatsapp fa-beat" style="--fa-animation-duration: 2s;"></i></a>
     </div>
 
-    <script src="js\script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="js\estetica.js"></script>
 </body>
 </html>
