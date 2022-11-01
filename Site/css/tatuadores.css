@@ -26,6 +26,7 @@
     margin: 5px;
     cursor: pointer;
     border-radius: 10px;
+    border: 5px inset #daa520;
 }
 
 .portfolio-button {

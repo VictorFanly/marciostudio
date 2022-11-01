@@ -8,7 +8,7 @@
 
 
 body {
-    background-color: black;
+    background-image: url(../img/bg.jpg);
     margin: 0;
     height: 100vh;
     width: 100vw;
@@ -19,11 +19,12 @@ body {
 }
 
 .logo-container {
-    background-image: linear-gradient(to bottom, transparent 25%, black 100%), url(../img/logo_bg.jpg);
+    background-image: linear-gradient(to bottom, transparent 25%, rgba(0, 0, 0, 1) 100%), url(../img/logo_bg.jpg);
     background-repeat: no-repeat;
     width: 100%;
     background-size:cover;
     background-position:center;
+    border-bottom: 5px inset #daa520;
 }
 
 .logo {
