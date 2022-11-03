@@ -1,4 +1,4 @@
-var swiper = new Swiper(".estetica-container", {
+var swiper = new Swiper(".cards-container", {
     slidesPerView: 2.333333333,
     spaceBetween: 50,
     slidesPerGroup: 1,

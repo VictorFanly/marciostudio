@@ -1,14 +1,26 @@
 .estetica {
-    position: relative;
-    padding: 0px 20px 40px 20px;
-    border: 2px solid #fff;
-    margin-top: 50px;
-    border-radius: 20px;
-    width: 1200px;
-    overflow:visible;
+  background-color: blueviolet;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
+
+.estetica-container {
+  position: relative;
+  padding: 0px 20px 40px 20px;
+  border-radius: 20px;
+  width: 90vw;
+  overflow:visible;
+}
+
+.swiper-pagination {
+  bottom: 0px;
+}
+
 .swiper-pagination-bullet {
   --swiper-pagination-bullet-inactive-color: #fff;
+  bottom: 0px;
+  left: 0px;
 }
 :root {
   --swiper-theme-color: red;
@@ -28,7 +40,7 @@
     font-family: 'Poiret One', cursive;
 }
 
-.estetica-container {
+.cards-container {
     margin: 0 20px;
     padding: 0 10vw;
     display: flex;
@@ -37,7 +49,7 @@
     overflow-y: hidden;
 }
 
-.estetica-container::-webkit-scrollbar {
+.cards-container::-webkit-scrollbar {
     display: none;
 }
 

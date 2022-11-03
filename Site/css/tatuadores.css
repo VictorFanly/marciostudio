@@ -1,4 +1,15 @@
-#Tatuadores {
+.equipe {
+    width: 100%;
+    height: 100vh;
+    background-color: purple;
+}
+
+.equipe-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.tatuadores {
     list-style: none;
     display: flex;
     justify-content:center;
@@ -8,7 +19,7 @@
     margin-top: 50px;
 }
 
-#Tatuadores p {
+.tatuadores p {
     color:aliceblue;
     text-align: center;
     font-weight: bold;

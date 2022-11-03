@@ -1,37 +1,36 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 * p,h2 {
     color: #fff;
 }
 
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+
+}
 
 body {
     background-image: url(../img/bg.jpg);
-    margin: 0;
-    height: 100vh;
-    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
 }
 
-.logo-container {
-    background-image: linear-gradient(to bottom, transparent 25%, rgba(0, 0, 0, 1) 100%), url(../img/logo_bg.jpg);
-    background-repeat: no-repeat;
-    width: 100%;
-    background-size:cover;
-    background-position:center;
-    border-bottom: 5px inset #daa520;
-}
-
-.logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 520px;
+section {
+    scroll-snap-align: start;
 }
 
 ::-webkit-scrollbar-track {
@@ -50,4 +49,30 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #aa0000;
+}
+
+.whatsapp a {
+    display: inline-flex;
+    background: #f14130;
+    color: #fff;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+    font-size: 40px;
+    text-decoration:none;
+    border: 2px solid #fff;
+}
+
+.whatsapp a:hover{
+    background: #fff;
+    color: #f14130;
+    border: 2px solid #f14130;
+    transform: scale(1.3);
+}
+
+.whatsapp a i{
+    transition: .4s all;
 }

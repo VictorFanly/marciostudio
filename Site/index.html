@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcio Silva Tattoo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Spectral:wght@500&display=swap" rel="stylesheet">
@@ -12,30 +13,33 @@
     <link rel="stylesheet" href="css\tatuadores.css">
     <link rel="stylesheet" href="css\estudio.css">
     <link rel="stylesheet" href="css\portfolio.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css\estetica.css">
     <link rel="stylesheet" href="css\contato.css">
-    <link rel="stylesheet" href="fontawesome-free-6.2.0-web\css\all.min.css">
+    <link rel="stylesheet" href="css\logo.css">
     <script src="js\script.js"></script>
 </head>
 <body>
-
+<div class="container">
     <!-- Logo -->
-    <section class="logo-container">
-        <img class="logo" src="img\logo.png" alt="Logo">
+    <section class="home">
+        <div class="home-bg">
+            <img class="logo" src="img\logo.png" alt="Logo">
+            
+        </div>
     </section>
-    <!--Sessão Tatuadores-->
-    <section>
-        <h2 class="tatuadores-titulo">Nossa Equipe</h2>
-        <ul id="Tatuadores">
-            <li>
-                <img class="foto" src="img\foto.jpg" alt="foto" width="170">
-                <p>Márcio</p>
-                <button class="portfolio-button">Portfólio</button>
-            </li>
-            <li>
-                <img class="foto" src="img\foto.jpg" alt="foto" width="170">
-                <p>Gabriel Correia</p>
+    <!--Seção Tatuadores-->
+    <section class="equipe">
+        <div class="equipe-container">  
+            <h2 class="tatuadores-titulo">Nossa Equipe</h2>
+            <ul class="tatuadores">
+                <li>
+                    <img class="foto" src="img\foto.jpg" alt="foto" width="170">
+                    <p>Márcio</p>
+                    <button class="portfolio-button">Portfólio</button>
+                </li>
+                <li>
+                    <img class="foto" src="img\foto.jpg" alt="foto" width="170">
+                    <p>Gabriel Correia</p>
                 <button class="portfolio-button">Portfólio</button>
             </li>
             <li>
@@ -54,107 +58,109 @@
                 <button class="portfolio-button">Portfólio</button>
             </li>
         </ul>
+    </div>
+</section>
+    <!--Seção Estúdio-->
+    <section class="estudioPai">
+        <div class="estudio-container">
+            <div class="texto">
+                <h2> Nosso Estúdio</h2>
+                <h3> a.</h3>
+            </div>
+            <div class="estudio">
+                <div class="slides">
+                    <input type="radio" name="slide" id="slide1" checked>
+                    <input type="radio" name="slide" id="slide2">
+                    <input type="radio" name="slide" id="slide3">
+                    <input type="radio" name="slide" id="slide4">
+                    <input type="radio" name="slide" id="slide5">
+                    
+                    <div class="slide s1">
+                        <img src="img\estudio1.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img\estudio2.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img\estudio3.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img\estudio4.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img\estudio5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="navigation">
+                        <label class="bar" for="slide1"></label>
+                        <label class="bar" for="slide2"></label>
+                        <label class="bar" for="slide3"></label>
+                        <label class="bar" for="slide4"></label>
+                        <label class="bar" for="slide5"></label>
+                    </div>
+                </div>
+        </div>
     </section>
-    <!--Sessão Estúdio-->
-    <div class="estudioPai">
-        <div class="estudio">
-            <div class="slides">
-                <input type="radio" name="slide" id="slide1" checked>
-                <input type="radio" name="slide" id="slide2">
-                <input type="radio" name="slide" id="slide3">
-                <input type="radio" name="slide" id="slide4">
-                <input type="radio" name="slide" id="slide5">
-
-                <div class="slide s1">
-                    <img src="img\estudio1.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="img\estudio2.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="img\estudio3.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="img\estudio4.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="img\estudio5.jpg" alt="">
+    <!--Seção Portfólio-->
+    <section id="Portfolio">
+        <div class="portfolio-container"> 
+            <div class="menu">
+                
+                <p>Portfólio</p>
+                
+                <div class="menuPic">
+                    <div id="PicMarcio" data-nome="t1" class="menu_pic"></div>
+                    <div id="PicCorreia" data-nome="t2" class="menu_pic"></div>
+                    <div id="PicMarine" data-nome="t3" class="menu_pic"></div>
+                    <div id="PicKim" data-nome="t4" class="menu_pic"></div>
+                    <div id="PicQueise" data-nome="t5" class="menu_pic"></div>
                 </div>
             </div>
-
-            <div class="navigation">
-                <label class="bar" for="slide1"></label>
-                <label class="bar" for="slide2"></label>
-                <label class="bar" for="slide3"></label>
-                <label class="bar" for="slide4"></label>
-                <label class="bar" for="slide5"></label>
+            <div id="TattooContent">
+                <div id="t1" class="port"></div>
+                <div id="t2" class="port"></div>
+                <div id="t3" class="port"></div>
+                <div id="t4" class="port"></div>
+                <div id="t5" class="port"></div>
             </div>
         </div>
-        <div class="texto">
-        <h2> Nosso Estúdio</h2>
-        <h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet efficitur mi, eu fermentum est. Aliquam eu euismod orci. Suspendisse quis erat sit amet dolor porta semper. Quisque ipsum enim, bibendum id eleifend eget, porta sed augue. Maecenas mauris erat, porta et bibendum rutrum, sodales a tellus. Donec sollicitudin eros ligula, quis porttitor nisl finibus elementum. Phasellus posuere libero non augue sagittis, at laoreet odio hendrerit. Maecenas consequat nisl a nisi sollicitudin, quis lobortis ipsum blandit. Curabitur ultrices suscipit est in molestie. Nam gravida interdum odio vitae convallis.
-
-            Vivamus lobortis urna sit amet aliquet vulputate. Proin sodales ultricies ipsum, vitae consectetur mauris suscipit ac. Pellentesque vitae feugiat orci. Proin vitae porttitor neque. Nullam nec risus vel risus suscipit consectetur nec ut augue. Curabitur porttitor nunc non lobortis finibus. Quisque metus ante, suscipit vel lectus ut, condimentum elementum risus. Phasellus quis lobortis dolor, ac pulvinar velit. Donec ut leo leo. Vestibulum in lacus dignissim mauris tincidunt blandit. In ac urna eget libero faucibus scelerisque ac in ipsum. Sed placerat id urna sit amet imperdiet. Etiam auctor nisi mi, vitae eleifend ante vehicula id. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam a ex leo. In nunc felis, commodo non sollicitudin vel, gravida ac mauris.</h3>
-        </div>
-    </div>
-    <!--Sessão Portfólio-->
-    <div id="Portfolio">
-
-        <div class="menu">
-
-            <p>Portfólio</p>
-
-            <div class="menuPic">
-                <div id="PicMarcio" data-nome="t1" class="menu_pic"></div>
-                <div id="PicCorreia" data-nome="t2" class="menu_pic"></div>
-                <div id="PicMarine" data-nome="t3" class="menu_pic"></div>
-                <div id="PicKim" data-nome="t4" class="menu_pic"></div>
-                <div id="PicQueise" data-nome="t5" class="menu_pic"></div>
-            </div>
-        </div>
-        <div id="TattooContent">
-            <div id="t1" class="port"></div>
-            <div id="t2" class="port"></div>
-            <div id="t3" class="port"></div>
-            <div id="t4" class="port"></div>
-            <div id="t5" class="port"></div>
-        </div>
-    </div>
-    <!--Sessão Procedimentos Estéticos-->
+    </section>
+    <!--Seção Procedimentos Estéticos-->
     <section class="estetica">
-        <h2 class="estetica-seção-nome"> Procedimentos Estéticos </h2>
-        <div class="swiper estetica-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide estetica-card">
-                    <div class="estetica-imagem">
-                        <img src="img\q1.jpg" class="estetica-thumb">
+        <div class="estetica-container"> 
+            <h2 class="estetica-seção-nome"> Procedimentos Estéticos </h2>
+            <div class="swiper cards-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide estetica-card">
+                        <div class="estetica-imagem">
+                            <img src="img\q1.jpg" class="estetica-thumb">
+                        </div>
+                        <div class="estetica-info">
+                            <h2 class="estetica-titulo">Remoção de Tatuagem</h2>
+                            <p class="estetica-descricao">O laser é o tratamento mais seguro e eficiente na remoção. Seguro, pois atinge somente o pigmento da tatuagem, não prejudicando a pele ao redor. E eficiente porque ao ser usado sobre a tatuagem, os pigmentos desta absorvem seletivamente a luz do laser e fragmentam-se em micropartículas.</p>
+                        </div>
                     </div>
-                    <div class="estetica-info">
-                        <h2 class="estetica-titulo">Remoção de Tatuagem</h2>
-                        <p class="estetica-descricao">O laser é o tratamento mais seguro e eficiente na remoção. Seguro, pois atinge somente o pigmento da tatuagem, não prejudicando a pele ao redor. E eficiente porque ao ser usado sobre a tatuagem, os pigmentos desta absorvem seletivamente a luz do laser e fragmentam-se em micropartículas.</p>
+                    
+                    <div class="swiper-slide estetica-card">
+                        <div class="estetica-imagem">
+                            <img src="img\q2.jpg" class="estetica-thumb">
+                        </div>
+                        <div class="estetica-info">
+                            <h2 class="estetica-titulo">Limpeza de Pele</h2>
+                            <p class="estetica-descricao">Traz muitos benefícios para a pele principalmente para quem tem a pele oleosa, mista e acnéica. Essa técnica ajuda no controle da oleosidade, diminui a formação de cravos e espinhas, ameniza o aspecto de manchas e ainda proporciona a renovação de células mortas.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide estetica-card">
+                        <div class="estetica-imagem">
+                            <img src="img\q3.jpg" class="estetica-thumb">
+                        </div>
+                        <div class="estetica-info">
+                            <h2 class="estetica-titulo">Peeling Hollywood</h2>
+                            <p class="estetica-descricao">Tratamento moderno realizado com laser não ablativo. Tendo como benefícios a regeneração celular, produção de colágeno, clareamento da pele, fechamento de poros dilatados e diminuição de pequenas linhas de expressão e cicatrizes de acne.</p>
                     </div>
                 </div>
-
-                <div class="swiper-slide estetica-card">
-                    <div class="estetica-imagem">
-                        <img src="img\q2.jpg" class="estetica-thumb">
-                    </div>
-                    <div class="estetica-info">
-                        <h2 class="estetica-titulo">Limpeza de Pele</h2>
-                        <p class="estetica-descricao">Traz muitos benefícios para a pele principalmente para quem tem a pele oleosa, mista e acnéica. Essa técnica ajuda no controle da oleosidade, diminui a formação de cravos e espinhas, ameniza o aspecto de manchas e ainda proporciona a renovação de células mortas.</p>
-                    </div>
-                </div>
-
-                <div class="swiper-slide estetica-card">
-                    <div class="estetica-imagem">
-                        <img src="img\q3.jpg" class="estetica-thumb">
-                    </div>
-                    <div class="estetica-info">
-                        <h2 class="estetica-titulo">Peeling Hollywood</h2>
-                        <p class="estetica-descricao">Tratamento moderno realizado com laser não ablativo. Tendo como benefícios a regeneração celular, produção de colágeno, clareamento da pele, fechamento de poros dilatados e diminuição de pequenas linhas de expressão e cicatrizes de acne.</p>
-                    </div>
-                </div>
-
+                
                 <div class="swiper-slide estetica-card">
                     <div class="estetica-imagem">
                         <img src="img\q4.jpg" class="estetica-thumb">
@@ -164,7 +170,7 @@
                         <p class="estetica-descricao">O laser é o tratamento mais seguro e eficiente na despigmentação. Seguro, pois atinge somente o pigmento, não prejudicando a pele ao redor. E eficiente porque ao ser usado na sobrancelha, os pigmentos desta absorvem seletivamente a luz do laser e fragmentam-se em micropartículas..</p>
                     </div>
                 </div>
-
+                
                 <div class="swiper-slide estetica-card">
                     <div class="estetica-imagem">
                         <img src="img\q5.jpg" class="estetica-thumb">
@@ -174,7 +180,7 @@
                         <p class="estetica-descricao">Trabalhamos com jóias de alta qualidade, todas elas sendo material em titânio. Trabalhamos com agulha americana, material ideal para perfuração e todos nossos materiais são esterilizados em autoclave.</p>
                     </div>
                 </div>
-
+                
                 <div class="swiper-slide estetica-card">
                     <div class="estetica-imagem">
                         <img src="img\q1.jpg" class="estetica-thumb">
@@ -184,7 +190,7 @@
                         <p class="estetica-descricao">Removemos seu arrependimento.</p>
                     </div>
                 </div>
-
+                
                 <div class="swiper-slide estetica-card">
                     <div class="estetica-imagem">
                         <img src="img\q1.jpg" class="estetica-thumb">
@@ -196,45 +202,50 @@
                 </div>
             </div>
         </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
     </section>
-
+    <!-- Seção Contato -->
     <section class="contato">
-        <div class="social-media">
-            <h2 class="social-media-title">Redes Sociais</h2>
-            <a  href="https://www.facebook.com/marciotattostudio02" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-facebook-f"></i>
-            </a>
-
-            <a href="https://www.instagram.com/studiomarciotattoo/" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-
-            <a href="https://www.tiktok.com/@marciosilvastudiotattoo1" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-tiktok"></i>
-            </a>
-
-            <a href="https://www.youtube.com/channel/UCpxWp92khqbHBZrTb2jyEfw" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-youtube"></i>
-            </a>
-            
-
-        </div>
-        <div class="maps">
-        <h2 class="contato-title">Encontre-nos no Maps</h2>
-        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2348.9933816357343!2d-34.91126005682326!3d-8.048295582058042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab19bf86181c8f%3A0x8a5edea8b4deb1d!2sM%C3%A1rcio%20silva%20Studio%20tattoo!5e0!3m2!1spt-BR!2sbr!4v1666789757228!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="contato-container">
+            <div class="maps">
+                <h2 class="contato-title">Encontre-nos no Maps</h2>
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2348.9933816357343!2d-34.91126005682326!3d-8.048295582058042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab19bf86181c8f%3A0x8a5edea8b4deb1d!2sM%C3%A1rcio%20silva%20Studio%20tattoo!5e0!3m2!1spt-BR!2sbr!4v1666789757228!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="social-media">
+                <a  href="https://www.facebook.com/marciotattostudio02" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                
+                <a href="https://www.instagram.com/studiomarciotattoo/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                
+                <a href="https://www.tiktok.com/@marciosilvastudiotattoo1" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                
+                <a href="https://www.youtube.com/channel/UCpxWp92khqbHBZrTb2jyEfw" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                
+                
+            </div>
         </div>
     </section>
+</div>
 
     <!-- Whatsapp -->
-
+    
     <div class="whatsapp fa-beat" style="--fa-animation-duration: 2s;">
         <a href="http://wa.me/5581999674401" target="_blank"><i class="fa-brands fa-whatsapp fa-beat" style="--fa-animation-duration: 2s;"></i></a>
     </div>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="js\estetica.js"></script>
+    <script src="js\home.js"></script>
+    <link rel="stylesheet" href="fontawesome-free-6.2.0-web\css\all.min.css">
 </body>
 </html>
