@@ -1,5 +1,8 @@
 
-.contato {
+.contato-title {
+    font-family: 'Poiret One', cursive;
+    margin-top: 50px;
+    font-size: 38px;
 }
 
 .contato-container {
@@ -17,11 +20,7 @@
 
 .mapa {
     border-radius: 10px;
-}
-
-.social-media-title {
-    text-align: center;
-    font-family: 'Poiret One', cursive;
+    margin-top: 30px;
 }
 
 .social-media-icon {

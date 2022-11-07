@@ -1,7 +1,6 @@
 .equipe {
-    width: 100%;
-    height: 100vh;
     background-color: purple;
+    display: flex;
 }
 
 .equipe-container {
@@ -25,6 +24,8 @@
     font-weight: bold;
     font-family: 'Spectral', serif;
     bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     font-size: 18px;
     position: relative;
 }
@@ -32,6 +33,9 @@
 .tatuadores-titulo {
     text-align: center;
     font-family: 'Poiret One', cursive;
+    margin-top: 50px;
+    font-size: 38px;
+    font-weight: 100;
 }
 .foto {
     margin: 5px;
