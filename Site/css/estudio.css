@@ -1,4 +1,4 @@
-.estudioPai {
+#estudioPai {
     display: flex;
     justify-content: center;
     background-color: #faf;
@@ -14,7 +14,7 @@
     
 }
 
-.estudioPai h2 {
+#estudioPai h2 {
     color: #fff;
     display: flex;
     justify-content: center;
@@ -23,7 +23,7 @@
 
 }
 
-.estudioPai h3 {
+#estudioPai h3 {
     color: #fff;
     display: flex;
     justify-content: center;

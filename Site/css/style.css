@@ -14,6 +14,7 @@ html {
 
 .container {
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
     overflow-y: scroll;
     width: 100%;
     height: 100vh;

@@ -48,7 +48,7 @@
 .social-media a {
     margin: 20px;
     display: inline-flex;
-    background: #f14130;
+    background: #f00;
     color: #fff;
     border-radius: 50px;
     width: 70px;
@@ -63,8 +63,8 @@
 
 .social-media a:hover{
     background: #fff;
-    color: #f14130;
-    border: 2px solid #f14130;
+    color: #f00;
+    border: 2px solid #f00;
     transform: scale(1.3);
 }
 

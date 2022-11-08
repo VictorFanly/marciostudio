@@ -10,25 +10,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Spectral:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css\style.css">
-    <link rel="stylesheet" href="css\tatuadores.css">
+    <link rel="stylesheet" href="css\equipe.css">
     <link rel="stylesheet" href="css\estudio.css">
     <link rel="stylesheet" href="css\portfolio.css">
     <link rel="stylesheet" href="css\estetica.css">
     <link rel="stylesheet" href="css\contato.css">
     <link rel="stylesheet" href="css\logo.css">
+    <link rel="stylesheet" href="css\menu.css">
     <script src="js\script.js"></script>
 </head>
 <body>
+
+    
 <div class="container">
+    <nav class="navMenu">
+        <ul>
+            <li><a class="navButton" href="#home">Início</a></li>
+            <li><a class="navButton" href="#equipe">Equipe</a></li>
+            <li><a class="navButton" href="#estudioPai">Estúdio</a></li>
+            <li><a class="navButton" href="#portfolio">Portfólios</a></li>
+            <li><a class="navButton" href="#estetica">Estética</a></li>
+            <li><a class="navButton" href="#contato">Localização</a></li>
+        </ul>
+    </nav>
     <!-- Logo -->
-    <section class="home">
+    <section id="home">
         <div class="home-bg">
             <img class="logo" src="img\logo.png" alt="Logo">
             
         </div>
     </section>
     <!--Seção Tatuadores-->
-    <section class="equipe">
+    <section id="equipe">
         <div class="equipe-container">  
             <h2 class="tatuadores-titulo">Nossa Equipe</h2>
             <ul class="tatuadores">
@@ -59,9 +72,9 @@
             </li>
         </ul>
     </div>
-</section>
+    </section>
     <!--Seção Estúdio-->
-    <section class="estudioPai">
+    <section id="estudioPai">
         <div class="estudio-container">
             <div class="texto">
                 <h2> Nosso Estúdio</h2>
@@ -102,7 +115,7 @@
         </div>
     </section>
     <!--Seção Portfólio-->
-    <section id="Portfolio">
+    <section id="portfolio">
         <div class="portfolio-container"> 
             <div class="menu">
                 
@@ -126,7 +139,7 @@
         </div>
     </section>
     <!--Seção Procedimentos Estéticos-->
-    <section class="estetica">
+    <section id="estetica">
         <div class="estetica-container"> 
             <h2 class="estetica-seção-nome"> Procedimentos Estéticos </h2>
             <div class="swiper cards-container">
@@ -208,7 +221,7 @@
     </div>
     </section>
     <!-- Seção Contato -->
-    <section class="contato">
+    <section id="contato">
         <div class="contato-container">
             <h2 class="contato-title">Encontre-nos no Maps</h2>
             <div class="maps">
