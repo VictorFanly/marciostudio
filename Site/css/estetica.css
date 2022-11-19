@@ -73,6 +73,7 @@
     width: 100%;
     object-fit: cover;
     border-radius: 15px;
+    border: solid 3px #fff;
 }
 
 .estetica-info {
@@ -82,10 +83,10 @@
 }
 
 .estetica-titulo {
-    text-transform: uppercase;
-    font-size: 24px;
+    font-size: 32px;
     margin-top: 0;
-    font-family: 'Spectral', serif;
+    font-family: 'Antic Slab';
+    text-shadow: 2px 2px 5px #bbb;
     font-weight: 100;
 }
 
