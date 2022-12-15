@@ -10,25 +10,15 @@
 
 .tatuadores {
     list-style: none;
-    display: flex;
-    justify-content:center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    column-gap: 20px;
+    row-gap: 20px;
     padding: 0;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
-.tatuadores p {
-    color:aliceblue;
-    text-align: center;
-    font-weight: bold;
-    font-family: 'Spectral', serif;
-    bottom: 15px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-size: 18px;
-    position: relative;
-}
 
 .tatuadores-titulo {
     text-align: center;
