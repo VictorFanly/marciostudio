@@ -20,11 +20,13 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    background-color: blue;
+    background-image: url(../img/logo_bg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
 }
 
 .menu {
-    border: 1px solid #fff;
     width: 450px;
     height: 133.5px;
     border-radius: 20px;
@@ -37,7 +39,7 @@
     justify-content: center;
 }
 
-.menu_pic {
+.tattoPic {
     margin: 10px;
 }
 
@@ -85,41 +87,49 @@
 }
 
 #PicMarcio {
-    background-color: red;
+    background-image: url(../img/marcioPic.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
     width: 75px;
     height: 75px;
     border-radius: 100%;
+    border: 2px solid #fff;
     cursor: pointer;
 }
 
 #PicCorreia {
-    background-color: blue;
+    background-image: url(../img/correiaPic.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
     width: 75px;
     height: 75px;
     border-radius: 100%;
+    border: 2px solid #fff;
     cursor: pointer;
 }
 
 #PicMarine {
-    background-color: orange;
+    background-image: url(../img/marinePic.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
     width: 75px;
     height: 75px;
     border-radius: 100%;
+    border: 2px solid #fff;
     cursor: pointer;
 }
 
 #PicKim {
-    background-color: purple;
+    background-image: url(../img/kimPic.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
     width: 75px;
     height: 75px;
     border-radius: 100%;
-    cursor: pointer;
-}
-
-#PicQueise {
-    background-color: lavender;
-    width: 75px;
-    height: 75px;
-    border-radius: 100%;
+    border: 2px solid #fff;
     cursor: pointer;
 }

@@ -1,5 +1,8 @@
 #equipe {
-    background-color: purple;
+    background-image: url(../img/logo_bg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
     display: flex;
 }
 
@@ -11,18 +14,69 @@
 .tatuadores {
     list-style: none;
     display: grid;
-    grid-template-columns: 500px 500px;
-    column-gap: 20px;
+    grid-template-columns: 50vw 50vw;
     row-gap: 20px;
     padding: 0;
     text-align: center;
     margin-top: 30px;
+    justify-content: center;
 }
 
+.shape img {
+    width: 33vw;
+    cursor: pointer;
+    mask-mode: alpha;
+}
+
+.shape:hover {
+    filter: none;
+    scale: 1.1;
+}
+
+.shape:hover P {
+    opacity: 0;
+}
+
+.left {
+    left: 60px;
+}
+
+.right {
+    right: 60px;
+}
+
+.shape {
+    position: relative;
+    margin: 0 auto;
+    width: 33vw;
+    filter: grayscale(100%);
+    transition: all .9s;
+    display:flex
+}
+
+.linkFrame {
+    position: relative;
+}
+
+.shape p {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    font-size: 3vw;
+    pointer-events: none;
+    font-family: 'Poiret One', cursive;
+    text-shadow: 5px 5px 10px #000;
+    transition: all .9s;
+}
+
+.shape img:hover>p{
+    opacity: 0;
+}
 
 .tatuadores-titulo {
     text-align: center;
     font-family: 'Poiret One', cursive;
+    text-shadow: 2px 2px #000;
     margin-top: 50px;
     font-size: 38px;
     font-weight: 100;

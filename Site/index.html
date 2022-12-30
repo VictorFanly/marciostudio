@@ -16,23 +16,45 @@
     <link rel="stylesheet" href="css\estetica.css">
     <link rel="stylesheet" href="css\contato.css">
     <link rel="stylesheet" href="css\logo.css">
-    <link rel="stylesheet" href="css\menu.css">
+    <link rel="stylesheet" href="css\nav.css">
     <script src="js\script.js"></script>
 </head>
 <body>
 
     
 <div class="container">
-    <nav class="navMenu">
+
+    <div class="menuNav">
         <ul>
-            <li><a class="navButton" href="#home">Início</a></li>
-            <li><a class="navButton" href="#equipe">Equipe</a></li>
-            <li><a class="navButton" href="#estudioPai">Estúdio</a></li>
-            <li><a class="navButton" href="#portfolio">Portfólios</a></li>
-            <li><a class="navButton" href="#estetica">Estética</a></li>
-            <li><a class="navButton" href="#contato">Localização</a></li>
+            <li class="list active">
+                <a href="#home">
+                    <i class="fa-solid fa-house icon"></i>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#equipe">
+                    <i class="fa-solid fa-people-group icon"></i>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#estudioPai">
+                    <i class="fa-solid fa-landmark-dome icon"></i>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#portfolio">
+                    <i class="fa-solid fa-palette icon"></i>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#contato">
+                    <i class="fa-solid fa-location-dot icon"></i>
+                </a>
+            </li>
+            
         </ul>
-    </nav>
+    </div>
+
     <!-- Logo -->
     <section id="home">
         <div class="home-bg">
@@ -45,8 +67,32 @@
         <div class="equipe-container">  
             <h2 class="tatuadores-titulo">Nossa Equipe</h2>
             <ul class="tatuadores">
+                <li class="linkFrame">
+                    <div class="shape left">    
+                        <img src="img\frame1.png">
+                        <p>Márcio Silva</p>
+                    </div>
+                </li>
+
                 <li>
-                    <img class="foto" src="img\foto.jpg" alt="foto" width="170">
+                    <div class="shape right">    
+                        <img src="img\frame2.png">
+                        <p>Gabriel Correia</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="shape left">    
+                        <img src="img\frame3.png">
+                        <p>Ock-Hy Kim</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="shape right">    
+                        <img src="img\frame4.png">
+                        <p>Gabriel Marine</p>
+                    </div>
                 </li>
         </ul>
     </div>
@@ -54,10 +100,6 @@
     <!--Seção Estúdio-->
     <section id="estudioPai">
         <div class="estudio-container">
-            <div class="texto">
-                <h2> Nosso Estúdio</h2>
-                <h3> a.</h3>
-            </div>
             <div class="estudio">
                 <div class="slides">
                     <input type="radio" name="slide" id="slide1" checked>
@@ -100,11 +142,11 @@
                 <p>Portfólio</p>
                 
                 <div class="menuPic">
-                    <div id="PicMarcio" data-nome="t1" class="menu_pic"></div>
-                    <div id="PicCorreia" data-nome="t2" class="menu_pic"></div>
-                    <div id="PicMarine" data-nome="t3" class="menu_pic"></div>
-                    <div id="PicKim" data-nome="t4" class="menu_pic"></div>
-                    <div id="PicQueise" data-nome="t5" class="menu_pic"></div>
+                    <div id="PicMarcio" data-nome="t1" class="tattoPic"></div>
+                    <div id="PicCorreia" data-nome="t2" class="tattoPic"></div>
+                    <div id="PicMarine" data-nome="t3" class="tattoPic"></div>
+                    <div id="PicKim" data-nome="t4" class="tattoPic"></div>
+                    <div id="PicQueise" data-nome="t5" class="tattoPic"></div>
                 </div>
             </div>
             <div id="TattooContent">
@@ -115,88 +157,6 @@
                 <div id="t5" class="port"></div>
             </div>
         </div>
-    </section>
-    <!--Seção Procedimentos Estéticos-->
-    <section id="estetica">
-        <div class="estetica-container"> 
-            <h2 class="estetica-seção-nome"> Procedimentos Estéticos </h2>
-            <div class="swiper cards-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide estetica-card">
-                        <div class="estetica-imagem">
-                            <img src="img\q1.jpg" class="estetica-thumb">
-                        </div>
-                        <div class="estetica-info">
-                            <h2 class="estetica-titulo">Remoção de Tatuagem</h2>
-                            <!-- <p class="estetica-descricao">O laser é o tratamento mais seguro e eficiente na remoção. Seguro, pois atinge somente o pigmento da tatuagem, não prejudicando a pele ao redor. E eficiente porque ao ser usado sobre a tatuagem, os pigmentos desta absorvem seletivamente a luz do laser e fragmentam-se em micropartículas.</p> -->
-                        </div>
-                    </div>
-                    
-                    <div class="swiper-slide estetica-card">
-                        <div class="estetica-imagem">
-                            <img src="img\q2.jpg" class="estetica-thumb">
-                        </div>
-                        <div class="estetica-info">
-                            <h2 class="estetica-titulo">Limpeza de Pele</h2>
-                            <!-- <p class="estetica-descricao">Traz muitos benefícios para a pele principalmente para quem tem a pele oleosa, mista e acnéica. Essa técnica ajuda no controle da oleosidade, diminui a formação de cravos e espinhas, ameniza o aspecto de manchas e ainda proporciona a renovação de células mortas.</p> -->
-                        </div>
-                    </div>
-                    
-                    <div class="swiper-slide estetica-card">
-                        <div class="estetica-imagem">
-                            <img src="img\q3.jpg" class="estetica-thumb">
-                        </div>
-                        <div class="estetica-info">
-                            <h2 class="estetica-titulo">Peeling Hollywood</h2>
-                            <!-- <p class="estetica-descricao">Tratamento moderno realizado com laser não ablativo. Tendo como benefícios a regeneração celular, produção de colágeno, clareamento da pele, fechamento de poros dilatados e diminuição de pequenas linhas de expressão e cicatrizes de acne.</p> -->
-                    </div>
-                </div>
-                
-                <div class="swiper-slide estetica-card">
-                    <div class="estetica-imagem">
-                        <img src="img\q4.jpg" class="estetica-thumb">
-                    </div>
-                    <div class="estetica-info">
-                        <h2 class="estetica-titulo">Despigmentação de Sobrancelhas</h2>
-                        <!-- <p class="estetica-descricao">O laser é o tratamento mais seguro e eficiente na despigmentação. Seguro, pois atinge somente o pigmento, não prejudicando a pele ao redor. E eficiente porque ao ser usado na sobrancelha, os pigmentos desta absorvem seletivamente a luz do laser e fragmentam-se em micropartículas..</p> -->
-                    </div>
-                </div>
-                
-                <div class="swiper-slide estetica-card">
-                    <div class="estetica-imagem">
-                        <img src="img\q5.jpg" class="estetica-thumb">
-                    </div>
-                    <div class="estetica-info">
-                        <h2 class="estetica-titulo">Aplicação de Piercing</h2>
-                        <!-- <p class="estetica-descricao">Trabalhamos com jóias de alta qualidade, todas elas sendo material em titânio. Trabalhamos com agulha americana, material ideal para perfuração e todos nossos materiais são esterilizados em autoclave.</p> -->
-                    </div>
-                </div>
-                
-                <div class="swiper-slide estetica-card">
-                    <div class="estetica-imagem">
-                        <img src="img\q6.jpg" class="estetica-thumb">
-                    </div>
-                    <div class="estetica-info">
-                        <h2 class="estetica-titulo">Design de Sobrancelhas</h2>
-                        <!-- <p class="estetica-descricao">Removemos seu arrependimento.</p> -->
-                    </div>
-                </div>
-                
-                <div class="swiper-slide estetica-card">
-                    <div class="estetica-imagem">
-                        <img src="img\q7.jpg" class="estetica-thumb">
-                    </div>
-                    <div class="estetica-info">
-                        <h2 class="estetica-titulo">Tratamento de Melasma</h2>
-                        <!-- <p class="estetica-descricao">Removemos seu arrependimento.</p> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-    </div>
     </section>
     <!-- Seção Contato -->
     <section id="contato">
@@ -237,6 +197,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="js\estetica.js"></script>
     <script src="js\home.js"></script>
+    <script src="js\nav.js"></script>
     <link rel="stylesheet" href="fontawesome-free-6.2.0-web\css\all.min.css">
 </body>
 </html>
