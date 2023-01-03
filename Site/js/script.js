@@ -1,5 +1,5 @@
 function mostrar() {
-    for(var i=1; i<6; i++){
+    for(var i=1; i<5; i++){
         document.getElementById("t"+i).hidden=true;
     }
     var obj=event.target.dataset.nome;
@@ -7,14 +7,13 @@ function mostrar() {
 }
 
 function inicia(){
-    for(var i=2; i<6; i++){
+    for(var i=2; i<5; i++){
         document.getElementById("t"+i).hidden=true;
     }
     document.getElementById("PicMarcio").addEventListener("click",mostrar);
     document.getElementById("PicCorreia").addEventListener("click",mostrar);
     document.getElementById("PicMarine").addEventListener("click",mostrar);
     document.getElementById("PicKim").addEventListener("click",mostrar);
-    document.getElementById("PicQueise").addEventListener("click",mostrar);
 
 }
 

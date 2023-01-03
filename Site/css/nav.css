@@ -9,10 +9,6 @@
     height: 500px;
     width:70px;
     background: transparent;
-    border-top: solid #f00;
-    border-right: solid #f00;
-    border-bottom: solid #f00;
-    border-radius: 10px;
     overflow-x: hidden;
     transition: .5s;
     top: 50%;
@@ -29,20 +25,13 @@
     padding-top: 40px;
 }
 
-.menuNav ul li {
-    position: relative;
-    list-style: none;
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-
 .menuNav ul li a {
     position: relative;
     display: flex;
     width: 100%;
     text-decoration: none;
     color: #fff;
+    transition: all .9s;
 }
 
 .menuNav ul li a .icon {
@@ -60,28 +49,7 @@
     z-index: 9999;
 }
 
-.menuNav ul li.active{
-    background: #f00;
-}
-
-.menuNav ul li.active a::before{
-    content: '';
-    position: absolute;
-    top: -30px;
-    right: 0;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    box-shadow: 15px 15px 0 #f00;
-}
-
-.menuNav ul li.active a::after{
-    content: '';
-    position: absolute;
-    bottom: -30px;
-    right: 0;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    box-shadow: 15px -15px 0 #f00;
+.menuNav ul li a:hover {
+    color:#c00;
+    scale: 1.5;
 }
