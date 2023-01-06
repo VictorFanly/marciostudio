@@ -25,7 +25,6 @@
 .shape img {
     width: 33vw;
     cursor: pointer;
-    mask-mode: alpha;
 }
 
 .shape:hover {

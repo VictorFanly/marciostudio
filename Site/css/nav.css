@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .menuNav {
     position: fixed;
     height: 500px;
@@ -43,7 +37,7 @@
     line-height: 70px;
 }
 
-.menuNav ul li a .icon /*ion-icon*/ {
+.menuNav ul li a .icon {
     position: relative;
     font-size: 1.5rem;
     z-index: 9999;
