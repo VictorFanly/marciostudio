@@ -2,8 +2,6 @@ window.onload = function() {
     document.getElementById("Body").style.display = "flex";
 }
 
-
-
 function mostrar() {
     for(var i=1; i<5; i++){
         document.getElementById("t"+i).hidden=true;
