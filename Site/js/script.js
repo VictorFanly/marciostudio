@@ -19,6 +19,11 @@ function inicia(){
     document.getElementById("PicMarine").addEventListener("click",mostrar);
     document.getElementById("PicKim").addEventListener("click",mostrar);
 
+    document.getElementById("MarcioShape").addEventListener("click",mostrar);
+    document.getElementById("CorreiaShape").addEventListener("click",mostrar);
+    document.getElementById("MarineShape").addEventListener("click",mostrar);
+    document.getElementById("KimShape").addEventListener("click",mostrar);
+
 }
 
 window.addEventListener("load",inicia);
