@@ -23,7 +23,7 @@ html {
 }
 
 body {
-    background-image: url(../img/bg.jpg);
+    background-color: #000;
     display: flex;
     flex-direction: column;
     align-items: center;

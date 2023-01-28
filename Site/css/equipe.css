@@ -9,6 +9,10 @@
 .equipe-container {
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;    
+    align-content: flex-start;
 }
 
 .tatuadores {
@@ -19,7 +23,6 @@
     padding: 0;
     text-align: center;
     margin-top: 30px;
-    justify-content: center;
 }
 
 .shape img {
@@ -77,6 +80,7 @@
     font-family: 'Poiret One', cursive;
     text-shadow: 2px 2px #000;
     margin-top: 50px;
+    margin-bottom: 50px;
     font-size: 38px;
     font-weight: 100;
 }
