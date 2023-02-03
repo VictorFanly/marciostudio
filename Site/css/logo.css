@@ -7,6 +7,8 @@
     background-repeat: no-repeat;
     background-size:cover;
     background-position:center;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo {
@@ -17,10 +19,6 @@
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
-    top: 50%;
-    right: 50%;
-    margin-top: -260px;
-    margin-right: -205.725px;
     height: 520px;
 }
 
