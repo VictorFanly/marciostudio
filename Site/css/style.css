@@ -6,6 +6,16 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    font-size: 1.6rem;
 }
 
 * p,h2 {
@@ -20,14 +30,6 @@ html {
     height: 100vh;
     overflow-x: hidden;
 
-}
-
-body {
-    background-color: #000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-x: hidden;
 }
 
 section {
@@ -56,13 +58,13 @@ section {
     display: inline-flex;
     background: #f00;
     color: #fff;
-    border-radius: 50px;
-    width: 70px;
-    height: 70px;
+    border-radius: 100%;
+    width: 7.0rem;
+    height: 7.0rem;
     justify-content: center;
     align-items: center;
     transition: .4s;
-    font-size: 40px;
+    font-size: 4.0rem;
     text-decoration:none;
     border: 2px solid #fff;
     transition: ease-in-out .5s;
@@ -77,4 +79,23 @@ section {
 
 .whatsapp a i{
     transition: .4s all;
+}
+
+
+@media (min-width: 1440px) {
+    html {
+        font-size: 150%;
+    }
+
+    .menuNav {
+        width: 100px;
+        height: 100vh;
+        margin-top: -30%;
+    }
+
+    .menuNav ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 120px;
+    }
 }
