@@ -82,20 +82,31 @@ section {
 }
 
 
-@media (min-width: 1440px) {
+@media (min-width: 2560px) {
     html {
-        font-size: 150%;
+        font-size: 125%;
     }
 
-    .menuNav {
-        width: 100px;
-        height: 100vh;
-        margin-top: -30%;
+    .tatuadores-titulo {
+        font-size: 7rem;
+    }
+
+    .tatuadores {
+        margin-top: 250px;
+    }
+
+    .menuNav ul li a .icon {
+        font-size: 4rem;
+    }
+
+}
+
+@media (min-width: 1440px) {
+    html {
+        font-size: 100%;
     }
 
     .menuNav ul {
-        display: flex;
-        flex-direction: column;
-        row-gap: 120px;
+        row-gap: 30px;
     }
 }

@@ -10,9 +10,10 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;    
-    align-content: flex-start;
+    /* justify-content: center; */
+    /* align-content: flex-start; */
+    flex-direction: column;
+    flex-wrap: nowrap;    
 }
 
 .tatuadores {
@@ -20,7 +21,6 @@
     display: grid;
     grid-template-columns: 50vw 50vw;
     row-gap: 20px;
-    padding: 0;
     text-align: center;
     margin-top: 30px;
 }
@@ -62,9 +62,9 @@
 
 .shape p {
     position: absolute;
-    top: 50%;
+    top: 40%;
     width: 100%;
-    font-size: 3vw;
+    font-size: 4rem;
     pointer-events: none;
     font-family: 'Poiret One', cursive;
     text-shadow: 5px 5px 10px #000;
