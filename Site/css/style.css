@@ -81,25 +81,44 @@ section {
     transition: .4s all;
 }
 
-
-@media (min-width: 2560px) {
-    html {
-        font-size: 125%;
-    }
-
-    .tatuadores-titulo {
-        font-size: 7rem;
-    }
-
+@media (max-width: 769px) {
     .tatuadores {
-        margin-top: 250px;
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "."
+          "."
+          "."
+          "."; 
+          margin-top: 0;
     }
 
-    .menuNav ul li a .icon {
-        font-size: 4rem;
+    .right {
+        right: 0;
     }
 
+    .left {
+        left: 0;
+    }
+
+    .shape p {
+        font-size: 3rem;
+    }
+
+    .shape img {
+        width: 37vw;
+    }
 }
+
+@media (max-width: 630px) {
+    .shape p {
+        font-size: 2.5rem;
+    }
+}
+
+
 
 @media (min-width: 1440px) {
     html {
@@ -108,5 +127,31 @@ section {
 
     .menuNav ul {
         row-gap: 30px;
+    }
+}
+
+@media (min-width: 2560px) {
+    html {
+        font-size: 125%;
+    }
+    
+    .tatuadores-titulo {
+        font-size: 7rem;
+    }
+    
+    .tatuadores {
+        margin-top: 250px;
+    }
+    
+    .menuNav {
+        width: 100px;
+    }
+
+    .menuNav ul {
+        row-gap: 100px;
+    }
+    
+    .menuNav ul li a .icon {
+        font-size: 4rem;
     }
 }
