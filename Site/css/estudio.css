@@ -16,17 +16,6 @@
     align-items: center;
 }
 
-.estudio-container h2 {
-    text-align: center;
-    font-size: 3.8rem;
-    font-weight: normal;
-    pointer-events: none;
-    font-family: 'Poiret One', cursive;
-    text-shadow: rgb(0 0 0) 2px 2px;
-    transition: all .9s;
-    margin-top: 50px;
-}
-
 .estudio {
     height: auto;
     width: 60vw;

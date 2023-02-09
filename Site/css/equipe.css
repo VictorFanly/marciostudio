@@ -30,6 +30,11 @@
     cursor: pointer;
 }
 
+.shape a {
+    display: flex;
+    justify-content: center;
+}
+
 .shape:hover {
     filter: none;
     scale: 1.1;
