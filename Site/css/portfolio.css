@@ -28,11 +28,9 @@
 }
 
 .menu {
-    width: 45rem;
+    width: 100%;
     border-radius: 2.0rem;
-    margin-top: 2.0rem;
     margin-bottom: 30px;
-    text-align: center;
 }
 
 .menuPic {
@@ -59,6 +57,8 @@
 #TattooContent {
     width:60vw;
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 #PicMarcio {

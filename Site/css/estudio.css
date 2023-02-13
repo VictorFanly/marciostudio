@@ -1,7 +1,7 @@
 #estudioPai {
     display: flex;
     justify-content: center;
-    background-image: url(../img/logo_bg.jpg);
+    background-image: url(../img/estudio_bg.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position:center;
@@ -35,8 +35,8 @@
 }
 
 .bar {
-    width: 50px;
-    height: 17px;
+    width: 5rem;
+    height: 1.7rem;
     border: 2px solid #a00;
     margin: 6px;
     border-radius: 50px;

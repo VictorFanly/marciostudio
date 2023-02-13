@@ -1,3 +1,9 @@
+#contato {
+    background-image: url(../img/contato_bg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+}
 
 .contato-title {
     font-family: 'Poiret One', cursive;
