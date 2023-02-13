@@ -276,6 +276,19 @@ section {
     .estudio {
         margin-top: 350px;
     }
+
+    .photoGrid {
+        grid-template-columns: repeat(4, 250px);
+        grid-template-rows: repeat(2, 250px);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        top: 100px;
+    }
+
+    .tattoPic {
+        width: 10rem;
+        height: 10rem;
+    }
 }
 
 @media (min-width: 2560px) {
@@ -310,5 +323,19 @@ section {
     .bar {
         width: 8rem;
         height: 2.5rem;
+    }
+
+    .photoGrid {
+        grid-template-columns: repeat(4, 500px);
+        grid-template-rows: repeat(2, 500px);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        top: 100px;
+    }
+
+    .tattoPic {
+        margin-top: 200px;
+        width: 15rem;
+        height: 15rem;
     }
 }
