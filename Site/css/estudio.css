@@ -1,7 +1,7 @@
 #estudioPai {
     display: flex;
     justify-content: center;
-    background-image: url(../img/estudio_bg.jpg);
+    background-image: url(../img/estudio_bg.webp);
     background-repeat: no-repeat;
     background-size:cover;
     background-position:center;

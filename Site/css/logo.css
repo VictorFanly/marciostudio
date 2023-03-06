@@ -3,7 +3,7 @@
     height: 100vh;
     display:flex;
     position: relative;
-    background-image: url(../img/logo_bg.jpg);
+    background-image: url(../img/logo_bg.webp);
     background-repeat: no-repeat;
     background-size:cover;
     background-position:center;

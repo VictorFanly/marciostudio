@@ -21,7 +21,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    background-image: url(../img/portfolio_bg.jpg);
+    background-image: url(../img/portfolio_bg.webp);
     background-repeat: no-repeat;
     background-size:cover;
     background-position:center;
@@ -62,28 +62,28 @@
 }
 
 #PicMarcio {
-    background-image: url(../img/marcioPic.png);
+    background-image: url(../img/marcioPic.webp);
     background-repeat: no-repeat;
     background-size:cover;
     background-position:center;
 }
 
 #PicCorreia {
-    background-image: url(../img/correiaPic.png);
+    background-image: url(../img/correiaPic.webp);
     background-repeat: no-repeat;
     background-size:cover;
     background-position:center;
 }
 
 #PicMarine {
-    background-image: url(../img/marinePic.png);
+    background-image: url(../img/marinePic.webp);
     background-repeat: no-repeat;
     background-size:cover;
     background-position:center;
 }
 
 #PicKim {
-    background-image: url(../img/kimPic.png);
+    background-image: url(../img/kimPic.webp);
     background-repeat: no-repeat;
     background-size:cover;
     background-position:center;
