@@ -104,6 +104,7 @@
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     position: relative;
+    list-style: none;
 }
 
 .port img:hover {
