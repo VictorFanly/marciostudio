@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+
 #estudioPai {
     display: flex;
     justify-content: center;
@@ -16,13 +18,22 @@
     align-items: center;
 }
 
+.estudioTexto {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 50vw;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    text-shadow: 1px 1px #000;
+}
+
 .estudio {
     height: auto;
-    width: 60vw;
+    width: 50vw;
     overflow: hidden;
     position: relative;
     border-radius: 15px;
-    margin-top: 30px;
+    margin: 10px 0px;
     border: inset #f00 4px;
 }
 
