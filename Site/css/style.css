@@ -137,9 +137,17 @@ section {
     #TattooContent {
         width:70vw;
     }
+
+    .frames2 {
+        display: flex;
+    }
+
+    .frames1 {
+        display: none;
+    }
 }
 
-@media (min-width: 630px) {
+@media (min-width: 630px) and (max-width: 768px) {
 
     .tatuadores {
         margin-top: 15vh;
@@ -211,14 +219,6 @@ section {
     
     .shape img {
         width: 45vw;
-    }
-
-    .frames2 {
-        display: flex;
-    }
-
-    .frames1 {
-        display: none;
     }
 
     /* Estudio */
