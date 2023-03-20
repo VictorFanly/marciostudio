@@ -26,7 +26,7 @@ body {
     text-align: center;
     font-family: 'Poiret One', cursive;
     text-shadow: 2px 2px #000;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 30px;
     font-size: 3.8rem;
     font-weight: 100;
@@ -95,7 +95,6 @@ section {
 @media (max-width: 769px) {
     .tatuadores {
         display: grid; 
-        grid-template-columns: 1fr; 
         grid-template-rows: 1fr 1fr 1fr 1fr; 
         grid-template-areas: 
           "."
@@ -103,15 +102,13 @@ section {
           "."
           "."; 
           margin-top: 0;
+          row-gap: 10px;
     }
 
     .right {
         right: 0;
     }
 
-    .left {
-        left: 0;
-    }
 
     .shape p {
         font-size: 3rem;
@@ -137,16 +134,35 @@ section {
         font-size: 3rem;
         margin: 15px;
     }
+    #TattooContent {
+        width:70vw;
+    }
+}
 
+@media (min-width: 630px) {
+
+    .tatuadores {
+        margin-top: 15vh;
+        row-gap: 40px;
+    }
 }
 
 @media (max-width: 630px) {
+
+    .tatuadores {
+        grid-template-columns: 1fr;
+    }
+
     .shape p {
         font-size: 2.5rem;
     }
 
     .shape img {
-        width: 45vw;
+        width: 40vw;
+    }
+
+    .left {
+        left: 0;
     }
 
     .social-media a {
@@ -155,9 +171,14 @@ section {
         font-size: 2.5rem;
         margin: 10px;
     }
+
+    .menuNav {
+        width: 55px;
+    }
 }
 
 @media (max-width: 500px) {
+
 
 .home-bg {
     background-image: url(../img/logo_bg2.webp);
@@ -181,7 +202,7 @@ section {
 
     /* Tatuadores */
     .shape {
-        width: 55vw;
+        width: 45vw;
     }
     
     .shape p {
@@ -189,7 +210,7 @@ section {
     }
     
     .shape img {
-        width: 55vw;
+        width: 45vw;
     }
 
     .frames2 {
@@ -211,7 +232,7 @@ section {
     }
 
     .estudio {
-        top: 50px;
+        width: 65vw;
     }
 
     /* Portfólio */
@@ -222,12 +243,15 @@ section {
     }
 
     .photoGrid {
-        grid-template-columns: repeat(2, 110px);
-        grid-template-rows: repeat(4, 110px);
-        grid-column-gap: 5px;
+        grid-template-columns: repeat(2, 90px);
+        grid-template-rows: repeat(4, 90px);
+        grid-column-gap: 15px;
         grid-row-gap: 5px;
     }
 
+    .estudioTexto {
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 375px) {

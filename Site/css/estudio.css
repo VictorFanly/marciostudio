@@ -21,7 +21,7 @@
 .estudioTexto {
     text-align: center;
     font-size: 1.5rem;
-    width: 50vw;
+    width: 55vw;
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
     text-shadow: 1px 1px #000;
@@ -29,12 +29,12 @@
 
 .estudio {
     height: auto;
-    width: 50vw;
+    width: 60vw;
     overflow: hidden;
     position: relative;
     border-radius: 15px;
     margin: 10px 0px;
-    border: inset #f00 4px;
+    border: inset #f00 2px;
 }
 
 .navigation {
